@@ -1,0 +1,28 @@
+!!!
+html
+	head
+		title Cuina APM?
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='/css/bootstrap.min.css')
+		
+		script(src='http://code.jquery.com/jquery-1.7.2.min.js')
+		script(src='/js/ich.js')
+		script(src='/js/swfobject.js')
+		script(src='/js/bootstrap.min.js')
+		script(src='/javascripts/youtube.js')
+		
+		script(id='polaroid',type='text/html')
+			li.polaroid.span2
+				div.alert
+					a(class="thumbnail",href="#",id="{{ id }}",title="{{ title.$t }}")
+						img(src='http://i1.ytimg.com/vi/{{ id }}/default.jpg')
+					h5.title {{ title.$t }}
+					a(class="btn btn-primary btn-small pull-right")
+						b(class="icon icon-white icon-circle-arrow-right")
+				
+
+		script(src='http://localhost:3000/socket.io/socket.io.js')
+		script(src='/javascripts/layout.js')
+		
+	body!=body
+	

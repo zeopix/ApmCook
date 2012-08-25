@@ -1,0 +1,17 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: url(../images/bg.jpg) repeat;
+}
+
+a {
+  color: #00B7FF;
+}
+
+h1 { color: white; }
+
+.row.first .span4 a { float: right; margin: 10px; }
+
+.polaroid { height: 200px;}
+.polaroid .alert {height: 140px; padding: 10px; box-shadow: 0px 0px 10px #AAA;}
+.polaroid .title {height: 40px; overflow: hidden;}
